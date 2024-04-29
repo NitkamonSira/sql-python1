@@ -1,1 +1,3 @@
-print("hello, world")
+import sqlite3
+db = sqlite3.connect('something.db')
+cursor = 
