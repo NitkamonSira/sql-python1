@@ -10,8 +10,9 @@ def print_all_colour():
         cursor.execute(sql)
         results = cursor.fetchall()
         # print nicely
+        print("Colour              Hex code")
         for colour in results:
-            print(f"Colour: {colour[0]}\nHex code: {colour[1]}\n")
+            print(f"{colour[0].capitalize():<20}{colour[1]:<8}")
 
 
 if __name__ == "__main__":
